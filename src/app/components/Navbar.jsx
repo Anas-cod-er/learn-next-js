@@ -12,10 +12,34 @@ const navbar = () => {
             <span className="ml-3 text-xl">Tailblocks</span>
             </a>
             <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center ">
-                    <Link href={"/"} className="mr-5 text-white hover:text-white hover:bg-orange-300 px-4 py-2 rounded-xl">Home</Link>
-                    <Link href={"/about"} className="mr-5 text-white hover:text-white hover:bg-orange-300 px-4 py-2 rounded-2xl">About</Link>
-                    <Link href={"/user"} className="mr-5 text-white hover:text-white hover:bg-orange-300 px-4 py-2 rounded-2xl">User</Link>
-                    <Link href={"/contact"} className="mr-5 text-white hover:text-white hover:bg-orange-300 px-4 py-2  rounded-2xl">Contact</Link>
+                    <Link href={"/"} className="mr-5 px-4 py-2 rounded-2xl
+         text-white
+         backdrop-blur-md 
+         shadow-lg
+         hover:bg-orange-300/40
+         hover:border-orange-200/50
+         transition-all duration-300">Home</Link>
+                    <Link href={"/about"} className="mr-5 px-4 py-2 rounded-2xl
+         text-white
+         backdrop-blur-md 
+         shadow-lg
+         hover:bg-orange-300/40
+         hover:border-orange-200/50
+         transition-all duration-300">About</Link>
+                    <Link href={"/user"} className="mr-5 px-4 py-2 rounded-2xl
+         text-white
+         backdrop-blur-md 
+         shadow-lg
+         hover:bg-orange-300/40
+         hover:border-orange-200/50
+         transition-all duration-300">User</Link>
+                    <Link href={"/contact"} className="mr-5 px-4 py-2 rounded-2xl
+         text-white
+         backdrop-blur-md 
+         shadow-lg
+         hover:bg-orange-300/40
+         hover:border-orange-200/50
+         transition-all duration-300">Contact</Link>
             </nav>
             <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base text-black mt-4 md:mt-0">Button
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
