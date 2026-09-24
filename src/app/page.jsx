@@ -1,16 +1,46 @@
-import React from 'react'
-
 const page = () => {
   return (
-    <section className="text-gray-400 bg-gray-900 body-font">
-      <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-        <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"/>
-        <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Microdosing synth tattooed vexillologist</h1>
-          <p className="leading-relaxed mb-8">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
-          <div className="flex justify-center">
-            <button className="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded text-lg">Button</button>
-            <button className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">Button</button>
+    <section className="min-h-screen overflow-hidden bg-[#f5f1e8] px-6 py-16 text-[#17221b] sm:px-10 lg:px-16">
+      <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
+        <div className="max-w-3xl">
+          <p className="mb-6 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.25em] text-[#c75b39]">
+            <span className="h-2 w-2 rounded-full bg-[#c75b39]" />
+            Learn with momentum
+          </p>
+          <h1 className="max-w-2xl text-5xl font-semibold leading-[0.98] tracking-[-0.04em] sm:text-7xl">
+            Build skills that move you forward.
+          </h1>
+          <p className="mt-8 max-w-xl text-lg leading-8 text-[#56635a] sm:text-xl">
+            Practical lessons, thoughtful documentation, and a clear path from your first line of code to your next big idea.
+          </p>
+          <div className="mt-10 flex flex-wrap gap-4">
+            <a href="/docs" className="rounded-full bg-[#c75b39] px-7 py-3.5 text-sm font-bold text-white transition hover:bg-[#a9462b]">
+              Explore the docs
+            </a>
+            <a href="/about" className="rounded-full border border-[#17221b] px-7 py-3.5 text-sm font-bold transition hover:bg-[#17221b] hover:text-white">
+              Our approach <span aria-hidden="true">-&gt;</span>
+            </a>
+          </div>
+        </div>
+        <div className="relative mx-auto w-full max-w-md">
+          <div className="absolute -right-5 -top-5 h-24 w-24 rounded-full border-8 border-[#e5a94d] sm:-right-8 sm:-top-8" />
+          <div className="relative rounded-[2rem] bg-[#17221b] p-8 text-[#f5f1e8] shadow-2xl shadow-[#17221b]/20 sm:p-10">
+            <div className="flex items-center justify-between border-b border-white/15 pb-6">
+              <span className="text-sm font-semibold tracking-wide">Your learning path</span>
+              <span className="rounded-full bg-[#e5a94d] px-3 py-1 text-xs font-bold text-[#17221b]">01 / 04</span>
+            </div>
+            <div className="py-12">
+              <p className="text-sm text-[#b6c0b8]">Currently exploring</p>
+              <h2 className="mt-3 text-4xl font-semibold tracking-tight">Next.js fundamentals</h2>
+              <div className="mt-8 h-2 overflow-hidden rounded-full bg-white/15">
+                <div className="h-full w-2/5 rounded-full bg-[#e5a94d]" />
+              </div>
+              <p className="mt-3 text-sm text-[#b6c0b8]">4 of 10 lessons completed</p>
+            </div>
+            <div className="grid grid-cols-2 gap-3 border-t border-white/15 pt-6 text-sm">
+              <div><strong className="block text-2xl text-[#e5a94d]">12</strong>lessons ready</div>
+              <div><strong className="block text-2xl text-[#e5a94d]">∞</strong>ways to build</div>
+            </div>
           </div>
         </div>
       </div>
