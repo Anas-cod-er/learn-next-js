@@ -1,0 +1,327 @@
+.loginPage {
+  --ink: #182923;
+  --muted: #68746e;
+  --accent: #c15b3b;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(420px, 0.92fr);
+  min-height: 100svh;
+  color: var(--ink);
+  background: #fbfaf6;
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+:global(body):has(.loginPage) {
+  background: #fbfaf6;
+}
+
+:global(body):has(.loginPage) > :global(header),
+:global(body):has(.loginPage) > :global(footer) {
+  display: none;
+}
+
+:global(body):has(.loginPage) > :global(main) {
+  height: auto;
+  min-height: 100svh;
+}
+
+.visualPanel {
+  position: relative;
+  display: flex;
+  min-height: 100svh;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 38px 46px;
+  color: #fff;
+  background-color: #244239;
+  background-image: linear-gradient(180deg, rgb(14 36 29 / 42%) 0%, rgb(14 36 29 / 12%) 38%, rgb(14 36 29 / 70%) 100%), url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85');
+  background-position: center;
+  background-size: cover;
+}
+
+.brand,
+.mobileBrand {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 11px;
+  color: inherit;
+  font-size: 18px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.brandMark {
+  display: grid;
+  width: 36px;
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 11px;
+  color: #fff;
+  background: var(--accent);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.visualCopy {
+  max-width: 510px;
+  padding-bottom: 30px;
+}
+
+.eyebrow,
+.formEyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.eyebrow {
+  color: #f2c7a9;
+  text-transform: uppercase;
+}
+
+.visualCopy h1 {
+  max-width: 500px;
+  margin: 18px 0 15px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(42px, 5vw, 70px);
+  font-weight: 400;
+  line-height: 1.04;
+}
+
+.visualCopy p,
+.visualCaption {
+  color: rgb(255 255 255 / 82%);
+  font-size: 15px;
+}
+
+.visualCaption {
+  font-size: 12px;
+}
+
+.formPanel {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  padding: 56px 44px;
+}
+
+.formWrap {
+  width: min(100%, 390px);
+}
+
+.mobileBrand {
+  display: none;
+  margin-bottom: 52px;
+}
+
+.formEyebrow {
+  color: var(--accent);
+}
+
+.formWrap h2 {
+  margin: 13px 0 8px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 43px;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.intro {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 34px;
+}
+
+.form > label,
+.passwordLabel label {
+  margin-bottom: 9px;
+  color: #27372f;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.form > input {
+  width: 100%;
+  height: 49px;
+  margin-bottom: 21px;
+  padding: 0 14px;
+  border: 1px solid #d9ddd7;
+  border-radius: 5px;
+  outline: none;
+  color: var(--ink);
+  background: #fff;
+  font: inherit;
+  font-size: 14px;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.form > input::placeholder {
+  color: #9ba39e;
+}
+
+.form > input:focus {
+  border-color: #6e8e7d;
+  box-shadow: 0 0 0 3px rgb(79 123 99 / 14%);
+}
+
+.passwordLabel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.textButton {
+  margin: 0 0 9px;
+  padding: 0;
+  border: 0;
+  color: var(--accent);
+  background: none;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: -1px 0 24px;
+  color: #55625b;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.remember input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  accent-color: #315a47;
+}
+
+.submitButton {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  background: #25493a;
+  cursor: pointer;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 650;
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+.submitButton:hover {
+  transform: translateY(-1px);
+  background: #193b2d;
+}
+
+.submitButton span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.message {
+  min-height: 20px;
+  margin: 10px 0 0;
+  color: #8a462f;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.signup {
+  margin: 24px 0 0;
+  color: #68746e;
+  font-size: 13px;
+  text-align: center;
+}
+
+.signup a,
+.legal a {
+  color: #315a47;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.signup a:hover,
+.legal a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal {
+  margin: 42px 0 0;
+  color: #909891;
+  font-size: 11px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.legal a {
+  color: #68746e;
+  font-weight: 500;
+}
+
+.brand:focus-visible,
+.textButton:focus-visible,
+.submitButton:focus-visible,
+.signup a:focus-visible,
+.legal a:focus-visible {
+  outline: 3px solid #dc987f;
+  outline-offset: 3px;
+}
+
+@media (max-width: 800px) {
+  .loginPage {
+    grid-template-columns: minmax(0, 0.85fr) minmax(390px, 1.15fr);
+  }
+
+  .visualPanel {
+    padding: 30px;
+  }
+
+  .formPanel {
+    padding: 44px 32px;
+  }
+}
+
+@media (max-width: 620px) {
+  .loginPage {
+    display: block;
+    min-height: 100svh;
+  }
+
+  .visualPanel {
+    display: none;
+  }
+
+  .formPanel {
+    min-height: 100svh;
+    padding: 38px 24px;
+  }
+
+  .mobileBrand {
+    display: inline-flex;
+    margin-bottom: 54px;
+  }
+
+  .formWrap h2 {
+    font-size: 39px;
+  }
+
+  .legal {
+    margin-top: 34px;
+  }
+}
